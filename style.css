@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Courier New";
+    src: url("./Font/Courier New/Courier New.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Courier New";
+    src: url("./Font/Courier New/Courier New Bold.ttf");
+    font-weight: 300;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Century Schoolbook";
+    src: url("./Assets/Font/CenturySchool/Century-Schoolbook.ttf");
+    font-weight: 300;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Cache";
+    src: url("./Assets/Font/Cache/Cache-Regular.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cache-Pressed";
+    src: url("./Assets/Font/Cache/Cache-Pressed.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+.text-title1 {
+    font-family: "Cache";
+    font-size: 4rem;
+    margin: 0;
+    font-style: normal;
+    color: #F4700B;
+}
+
+.text-title2 {
+    font-family: "Cache";
+    font-size: 7rem;
+    margin: 0;
+    font-style: normal;
+}
+
+.text-title3 {
+    font-family: "Cache";
+    font-size: 7rem;
+    margin: 0;
+    font-style: normal;
+}
+
+.text-nav {
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.text-body1 {
+    font-family: "Courier New";
+    font-size: 1.3rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-body2 {
+    font-family: "Courier New";
+    font-size: 1rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.text-header1 {
+    font-family: "Century Schoolbook";
+    font-size: 1.6rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-header2 {
+    font-family: "Century Schoolbook";
+    font-size: 1.3rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-header3 {
+    font-family: "Century Schoolbook";
+    font-size: 0.8rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.text-header3 {
+    font-family: "Century Schoolbook";
+    font-size: 1rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.p1Primary {
+    color: #F5F1D4;
+}
+.p1Secondary {
+    color: #DDDDD3;
+}
+.p1Accent {
+    color: #F4700B;
+}
+.p1Dark {
+    color: #212020;
+}
+
+.bg-p1Primary {
+    background-color: #F5F1D4;
+    overflow-x: hidden;
+}
+.bg-p1Secondary {
+    background-color: #DDDDD3;
+}
+.bg-p1Accent {
+    background-color: #F4700B;
+}
+.bg-p1Dark {
+    background-color: #212020;
+}
+
+nav .navbar-nav li a {
+    color: #212020 !important;
+}
+nav .navbar-nav li a:hover {
+    color: #F5F1D4 !important;
+}
+nav .navbar-nav li a:active {
+    color: #F5F1D4 !important;
+}
+
+.banner-content {
+    max-width: 550px;
+    margin-left: auto;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #F4700B !important;
+    font-family: 'Courier New' !important;
+    color: #212020 !important;
+    border: 0.02rem solid !important;
+    border-color: #F4700B !important;
+    border-radius: 15px !important;
+    padding: 0.5rem 2rem !important;
+    font-weight: bold !important;
+}
+
+.btn-primary:hover {
+    background-color: #F5F1D4 !important;
+    font-family: 'Courier New' !important;
+    font-weight: bold !important;
+    color: #212020 !important;
+    border: 0.02rem solid !important;
+    border-color: #212020 !important;
+    
+}
+.ourFarmDiv {
+    background-image: url('./Assets/Images/beeBG.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+.ornaments {
+    position: center;
+}
+
+.sectionHeight{
+    height: 100%;
+}
+
+.sectionMidHeight{
+    height: 100%;
+}
+
+.imgTile {
+    color: #212020;
+    opacity: 75%;
+}
+
+.userPic {
+    width: 70px;
+}
+
+.p1border {
+    border: 3px solid #212020;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.footer-img {
+    width: 100px;
+    min-width: 50px;
+}
+
+.bg-banner {
+    background: url("./Assets/Images/banner.png") center / cover no-repeat;
+}
+
+.responsiveBG {
+    background: url("./Assets/Images/responsiveBG.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.gmaps {
+    width: 300px;
+    height: 500px;
+}
+
+@media (min-width: 576px) {
+    .gmaps {
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 767px) {
+    .responsiveBG {
+        background: #F5F1D4;
+        overflow-x: hidden;
+    }
+
+    .sectionHeight{
+        height: 100vh;
+    }
+
+    .sectionMidHeight{
+        height: 58vh;
+    }
+
+    .gmaps {
+        width: 800px;
+        height: 400px;
+    }
+} 
+
