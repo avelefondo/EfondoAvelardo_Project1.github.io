@@ -52,7 +52,7 @@
 
 .text-title3 {
     font-family: "Cache";
-    font-size: 7rem;
+    font-size: 5rem;
     margin: 0;
     font-style: normal;
 }
@@ -77,6 +77,15 @@
 .text-body2 {
     font-family: "Courier New";
     font-size: 1rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.text-body3 {
+    font-family: "Courier New";
+    font-size: 0.8rem;
     margin: 0;
     font-style: normal;
     font-weight: normal;
@@ -110,9 +119,9 @@
     margin-top: 10px;
 }
 
-.text-header3 {
+.text-header4 {
     font-family: "Century Schoolbook";
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0;
     font-style: normal;
     font-weight: bold;
@@ -186,6 +195,28 @@ nav .navbar-nav li a:active {
     border-color: #212020 !important;
     
 }
+
+.btn-ordernav, .btn-ordernav:active, .btn-ordernav:visited {
+    background-color: #212020 !important;
+    font-family: 'Courier New' !important;
+    color: #F5F1D4 !important;
+    border: 0.02rem solid !important;
+    border-color: #212020 !important;
+    border-radius: 15px !important;
+    padding: 0.5rem 2rem !important;
+    font-weight: bold !important;
+}
+
+.btn-ordernav:hover {
+    background-color: #DDDDD3 !important;
+    font-family: 'Courier New' !important;
+    font-weight: bold !important;
+    color: #212020 !important;
+    border: 0.02rem solid !important;
+    border-color: #DDDDD3 !important;
+    
+}
+
 .ourFarmDiv {
     background-image: url('./Assets/Images/beeBG.png');
     background-repeat:no-repeat;
@@ -203,6 +234,10 @@ nav .navbar-nav li a:active {
 
 .sectionMidHeight{
     height: 100%;
+}
+
+.sectionBannerHeight{
+    height: 500px;
 }
 
 .imgTile {
@@ -244,6 +279,20 @@ a:active { text-decoration: none; }
     height: 500px;
 }
 
+.mead-BG {
+    background: url('./Assets/Images/Valhalla1.png') no-repeat bottom center;
+    background-color: #DDDDD3;
+    background-size: 50%;
+}
+
+.sectionHoney {
+    height: 100%;
+}
+
+.sectionMead {
+    height: 750px;
+}
+
 @media (min-width: 576px) {
     .gmaps {
         width: 500px;
@@ -255,14 +304,15 @@ a:active { text-decoration: none; }
     .responsiveBG {
         background: #F5F1D4;
         overflow-x: hidden;
+        height: 90vh;
     }
 
     .sectionHeight{
         height: 100vh;
     }
 
-    .sectionMidHeight{
-        height: 58vh;
+    .sectionBannerHeight{
+        height: 60vh;
     }
 
     .gmaps {
@@ -271,3 +321,30 @@ a:active { text-decoration: none; }
     }
 } 
 
+@media (min-width: 992px) {
+    .sectionHoney, .sectionMead {
+        height: 90vh;
+    }
+
+    .mead-BG {
+        background: url('./Assets/Images/Valhalla1.png') no-repeat bottom center;
+        background-color: #DDDDD3;
+        background-size: 35%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .sectionHeight{
+        max-height: 800px;
+    }
+    
+    .sectionBannerHeight, .sectionMidHeight, .sectionHoney{
+        height: 700px;
+    }
+
+    .responsiveBG {
+        background: #F5F1D4;
+        overflow-x: hidden;
+        height: 750px;
+    }
+}

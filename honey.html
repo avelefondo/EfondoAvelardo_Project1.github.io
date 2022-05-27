@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9bf09374ec.js" crossorigin="anonymous"></script>
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Honey Creations</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid p-2 bg-p1Accent">
+      <nav class="container-md navbar navbar-expand-lg navbar-dark bg-p1Accent">
+
+          <!--  Show this only on mobile to medium screens  -->
+            <a class="navbar-brand d-lg-none" href="./index.html">
+                <img src="./Assets/Images/ApiaryLogo.svg" alt="Logo" height="40px">
+            </a>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+          <!--  Use flexbox utility classes to change how the child elements are justified  -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+          
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-nav" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-nav" href="./ourFarm.html">Our Farm</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-nav" href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+              
+              
+          <!--   Show this only lg screens and up   -->
+              <a class="navbar-brand d-none d-lg-block" href="./index.html">
+                  <img src="./Assets/Images/ApiaryLogo.svg" alt="Logo" height="50rem">
+              </a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-nav" href="./honey.html">Honey</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-nav" href="./mead.html">Mead</a>
+                </li>
+                <li class="nav-item">
+                  <button type="button" class="btn btn-ordernav" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Order Now!
+                  </button>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+  <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-header2 p1Dark" id="staticBackdropLabel">Order Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-2 d-flex align-items-center">
+            <div class="col-md-6">
+              <label for="formGroupExampleInput" class="form-label text-header3">Full Name</label>
+              <input type="email" class="form-control bg-p1Secondary text-body2" id="formGroupExampleInput" placeholder="Your Full Name">
+            </div>
+            <div class="col-md-6">
+              <label for="formGroupExampleInput" class="form-label text-header3">Contact Number</label>
+              <input type="email" class="form-control bg-p1Secondary text-body2" id="formGroupExampleInput" placeholder="Contact Number">
+            </div>
+            <div class="col-md-12">
+              <label for="formGroupExampleInput" class="form-label text-header3">Address</label>
+              <input type="email" class="form-control bg-p1Secondary text-body2" id="formGroupExampleInput" placeholder="Your Address">
+          </div>
+            <div class="col-md-6">
+                <label for="formGroupExampleInput" class="form-label text-header3">Product</label>
+                <select class="form-select form-select-md mt-2 bg-p1Secondary text-body2" aria-label=".form-select-lg example">
+                  <option selected>Choose A Product</option>
+                  <option value="H1">150G Honey</option>
+                  <option value="H2">250G Honey</option>
+                  <option value="H3">1.4KG Honey</option>
+                  <option value="Mead">Valhalla - Craft Mead</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="formGroupExampleInput" class="form-label text-header3">Quantity</label>
+                <input type="email" class="form-control bg-p1Secondary text-body2" id="formGroupExampleInput" placeholder="Qty">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+          <button type="button" class="btn btn-primary">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Main Div -->
+    <div class="d-flex justify-content-center container-fluid p-2 sectionHoney bg-p1Secondary">
+        <div class="container row align-items-center my-4">
+            <div class="col-lg-6 text-center text-lg-start">
+                <div class="">
+                    <h5 class="text-title3 p1Accent lh-1">WE HAVE THE HONEY</h5>
+                    <h5 class="text-title3 p1Accent lh-1">YOU'RE LOOKING FOR</h5>
+                    <p class="text-body2 p1Dark mt-4">We are proud to offer a large and diverse selection of honey 
+                        for you to choose from, and we are confident that Cadie’s Apiary will have the honey 
+                        you’re looking for!
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="./Assets/Images/HoneySet.png" alt="photo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Cards -->
+    <section class="bg-p1Primary p-2">
+        <div class="container py-5">
+            <div class="d-flex row align-items-center">
+                <div class="col-12 text-center mb-5">
+                    <img src="./Assets/Images/Ornament.png" alt="ornament" class="img-fluid">
+                    <h3 class="text-title1 p1Accent">ALL NATURAL HONEY FROM OUR FARM</h3>
+                    <img src="./Assets/Images/Ornament.png" alt="ornament" class="img-fluid ornaments">
+                </div>
+                <div class="col-12">
+                    <div class="row align-items-center gy-3">
+                        <div class="col-md-4 text-center">
+                            <div class="card bg-p1Secondary">
+                                <img src="./Assets/Images/tileh250g.png" class="card-img-top p-2" alt="H250g">
+                                <div class="card-body">
+                                    <p class="text-header4 p1Accent">
+                                        Dark Wildflower Liquid Honey
+                                    </p>
+                                    <p class="text-header4 p1Dark">
+                                        250G
+                                    </p>
+                                    <p class="card-text text-body3 mb-2">
+                                      The dark nectar of plants such as Sunflowers, 
+                                      Japanese Knotweed, Asters & Golden Rod contribute to 
+                                      this rich and robust honey.
+                                    </p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                      Order Now!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="card bg-p1Secondary">
+                                <img src="./Assets/Images/tileh150g.png" class="card-img-top p-2" alt="H250g">
+                                <div class="card-body">
+                                    <p class="text-header4 p1Accent">
+                                        Dark Wildflower Liquid Honey
+                                    </p>
+                                    <p class="text-header4 p1Dark">
+                                        250G
+                                    </p>
+                                    <p class="card-text text-body3 mb-2">
+                                      The dark nectar of plants such as Sunflowers, 
+                                      Japanese Knotweed, Asters & Golden Rod contribute to 
+                                      this rich and robust honey.
+                                    </p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                      Order Now!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="card bg-p1Secondary">
+                                <img src="./Assets/Images/tileh1l.png" class="card-img-top p-2" alt="H250g">
+                                <div class="card-body">
+                                    <p class="text-header4 p1Accent">
+                                        Dark Wildflower Liquid Honey
+                                    </p>
+                                    <p class="text-header4 p1Dark">
+                                        1.42KG
+                                    </p>
+                                    <p class="card-text text-body3 mb-2">
+                                      The dark nectar of plants such as Sunflowers, 
+                                      Japanese Knotweed, Asters & Golden Rod contribute to 
+                                      this rich and robust honey.
+                                    </p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                      Order Now!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2 bg-p1Accent">
+            <div class="container">
+              <div class="row align-items-center gy-3 gy-md-2">
+                  <div class="col-md-4 order-3 order-md-1">
+                  <a href="#">
+                    <p class="text-header3 p1Dark text-center">About The Developer</p>
+                  </a>
+                </div>
+                <div class="col-md-4 order-1 order-md-2 text-center">
+                  <a href="#">
+                    <img class="img-fluid footer-img image-fluid" src="./Assets/Images/Logo.png">            
+                  </a>
+                </div>
+                <div class="col-md-4 text-center order-2 order-md-3">
+                  <p class="text-header3 p1Primary">Connect With Us</p>
+                  <a href="#"><i class="p1Primary fa-lg fa-brands fa-facebook-square"></i></a>
+                  <a href="#"></a><i class="mx-2 p1Primary fa-lg fa-brands fa-instagram"></i></a>
+                  <a href="#"></a><i class="p1Primary fa-lg fa-brands fa-twitter"></i></a>
+                  <a href="#"></a><i class="mx-2 p1Primary fa-lg fa-brands fa-tiktok"></i></a>
+      
+                </div>
+              </div> 
+            </div>
+    </footer>
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
